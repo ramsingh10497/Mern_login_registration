@@ -31,7 +31,11 @@ const Register = () => {
                 history.push("/login")
             })
         } else {
-            alert("invlid input")
+            if(password !== reEnterPassword) {
+                alert("Unmatched Password")
+            } else {
+                alert("invlid input")
+            }
         }
         
     }
